@@ -1,0 +1,86 @@
+lmstudio:
+  host: http://localhost:1234
+  model: qwen/qwen3.5-9b
+  temperature: 0.3
+risk:
+  default_risk_per_trade: 1.0
+  max_correlation: 0.7
+  min_rr_ratio: 1.5
+  short_stop_loss_required: true
+scanner:
+  enabled: true
+  max_picks: 5
+  min_volume: 10000
+  refresh_interval_minutes: 60
+  scan_before_cycle: true
+  sectors:
+  - oil_gas
+  - finance
+  - technology
+  - mining
+  - energy
+  - telecom
+  use_llm: true
+schedule:
+  cycle_interval_minutes: 15
+  cycle_timeout: 600
+  pre_market_scan: 09:00
+  timezone: Europe/Moscow
+  trading_hours: 10:00-18:45
+sectors:
+  finance:
+  - SBER
+  - VTBR
+  mining:
+  - GMKN
+  oil_gas:
+  - GAZP
+  - LKOH
+  - ROSN
+  - NVTK
+  technology:
+  - YDEX
+database:
+  url: postgresql://trading:trading@localhost:5432/trading_agents
+  pool_size: 5
+  max_overflow: 10
+  echo: false
+system:
+  data_dir: ./data
+  log_level: INFO
+  name: Trading Agents
+  version: 1.0.0
+tinvest:
+  account_id: ${TINVEST_ACCOUNT_ID}
+  token: ${TINVEST_TOKEN}
+trading:
+  allow_shorts: true
+  currency: RUB
+  default_leverage: 3.0
+  initial_capital: 100000
+  liquidation_percent: 30
+  margin_call_percent: 50
+  max_daily_loss_percent: 2.0
+  max_daily_drawdown: 5.0
+  max_total_drawdown: 15.0
+  max_leverage: 3.0
+  max_position_percent: 20.0
+  retention_days: 90
+  max_positions: 10
+  max_sector_exposure: 40.0
+  max_short_exposure: 20.0
+  paper_trading: true
+  profit_target_percent: 1.0
+watchlist:
+- SBER
+- GAZP
+- LKOH
+- GMKN
+- YDEX
+- VTBR
+- ROSN
+- NVTK
+- SNGSP
+- IRAO
+- MGNT
+- MAGN

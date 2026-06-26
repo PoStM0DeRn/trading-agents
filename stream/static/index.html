@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <title>Trading Agents Live</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <h1>TRADING AGENTS LIVE</h1>
+                <span class="badge badge-paper">PAPER TRADING</span>
+            </div>
+            <div class="header-right">
+                <span class="status-dot" id="ws-status"></span>
+                <span id="connection-status">Connecting...</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-grid">
+            <!-- Left Column: Portfolio + Agents -->
+            <div class="left-column">
+                <!-- Portfolio Summary -->
+                <div class="card portfolio-card">
+                    <div class="card-header">PORTFOLIO</div>
+                    <div class="portfolio-metrics">
+                        <div class="metric">
+                            <span class="metric-label">Balance</span>
+                            <span class="metric-value" id="balance">0 ₽</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">P&L</span>
+                            <span class="metric-value" id="pnl">0%</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Positions</span>
+                            <span class="metric-value" id="positions-count">0/10</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-label">Leverage</span>
+                            <span class="metric-value" id="leverage">1.0x</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agent Pipeline -->
+                <div class="card agents-card">
+                    <div class="card-header">AGENT PIPELINE</div>
+                    <div class="agents-list" id="agents-list">
+                        <!-- Dynamic -->
+                    </div>
+                </div>
+
+                <!-- Last Trades -->
+                <div class="card trades-card">
+                    <div class="card-header">LAST TRADES</div>
+                    <div class="trades-list" id="trades-list">
+                        <!-- Dynamic -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: LM Studio + Equity -->
+            <div class="right-column">
+                <!-- LM Studio -->
+                <div class="card lmstudio-card">
+                    <div class="card-header">LM STUDIO</div>
+                    <div class="lmstudio-status">
+                        <div class="lm-model" id="lm-model">Model: --</div>
+                        <div class="lm-online" id="lm-status">Status: --</div>
+                    </div>
+
+                    <!-- Speed Progress Bar -->
+                    <div class="lm-metric">
+                        <span class="lm-label">Speed</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill speed-fill" id="speed-bar"></div>
+                        </div>
+                        <span class="lm-value" id="speed-value">0 tok/s</span>
+                    </div>
+
+                    <!-- VRAM Progress Bar -->
+                    <div class="lm-metric">
+                        <span class="lm-label">VRAM</span>
+                        <div class="progress-bar">
+                            <div class="progress-fill vram-fill" id="vram-bar"></div>
+                        </div>
+                        <span class="lm-value" id="vram-value">0/0 GB</span>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="lm-stats">
+                        <div class="lm-stat">
+                            <span class="lm-stat-label">Last</span>
+                            <span class="lm-stat-value" id="last-gen">-- tok / --s</span>
+                        </div>
+                        <div class="lm-stat">
+                            <span class="lm-stat-label">Avg</span>
+                            <span class="lm-stat-value" id="avg-speed">-- tok/s</span>
+                        </div>
+                        <div class="lm-stat">
+                            <span class="lm-stat-label">Total</span>
+                            <span class="lm-stat-value" id="total-tokens">0 tokens</span>
+                        </div>
+                        <div class="lm-stat">
+                            <span class="lm-stat-label">Requests</span>
+                            <span class="lm-stat-value" id="total-requests">0</span>
+                        </div>
+                    </div>
+
+                    <!-- Speed History Chart -->
+                    <div class="lm-chart">
+                        <div class="card-subheader">SPEED HISTORY</div>
+                        <div id="speed-chart" style="height: 150px;"></div>
+                    </div>
+                </div>
+
+                <!-- Equity Curve -->
+                <div class="card equity-card">
+                    <div class="card-header">EQUITY CURVE</div>
+                    <div id="equity-chart" style="height: 200px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

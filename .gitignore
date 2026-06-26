@@ -1,0 +1,38 @@
+# Sensitive credentials
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+dist/
+build/
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Data & logs
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/logs/
+data/*.log
+data/*.log.*
+data/backtest_cache/
+data/system_state.json
+
+# Testing
+.pytest_cache/
+*.pytest_cache/

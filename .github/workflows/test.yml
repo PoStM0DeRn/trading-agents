@@ -1,0 +1,36 @@
+name: Test
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+      - name: Run tests with coverage
+        run: python -m pytest tests/ --cov=tools --cov=core --cov=agents --cov-report=term-missing -v
+      - name: Lint with ruff
+        run: ruff check . --ignore=E501,F403,F405
+      - name: Check Python syntax
+        run: |
+          python -c "
+          import glob, sys
+          files = glob.glob('**/*.py', recursive=True)
+          errors = 0
+          for f in files:
+              try:
+                  compile(open(f, encoding='utf-8').read(), f, 'exec')
+              except SyntaxError as e:
+                  print(f'SYNTAX ERROR: {f}: {e}')
+                  errors += 1
+          if errors:
+              sys.exit(1)
+          print(f'All {len(files)} .py files OK')
+          "

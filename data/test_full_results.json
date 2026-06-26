@@ -1,0 +1,1210 @@
+[
+  {
+    "type": "market_data_snapshot",
+    "agent": "MarketData",
+    "ticker": "SBER",
+    "timestamp": "2026-06-16T10:57:53.486959",
+    "quote": {
+      "ticker": "SBER",
+      "figi": "BBG004730N88",
+      "bid": 323.87,
+      "ask": 323.88,
+      "last": 323.88,
+      "spread": 0.01,
+      "timestamp": "2026-06-16T10:57:43.782908+00:00"
+    },
+    "indicators": {
+      "RSI": 40.47,
+      "MACD": {
+        "macd": 0.2336,
+        "signal": 0.0129,
+        "histogram": 0.2207,
+        "trend": "bullish"
+      },
+      "SMA_50": 322.34,
+      "SMA_200": 320.97,
+      "BB": {
+        "upper": 325.5,
+        "middle": 322.47,
+        "lower": 319.44
+      },
+      "ATR": 2.26
+    },
+    "support": 317.2,
+    "resistance": 327.97,
+    "volatility": 7.16,
+    "microstructure": {
+      "order_book_imbalance": {
+        "imbalance": 0.0871,
+        "bid_volume": 112501,
+        "ask_volume": 94471,
+        "bid_levels": 20,
+        "ask_levels": 20,
+        "large_bid": 40302,
+        "large_ask": 27751,
+        "signal": "neutral"
+      },
+      "volume_pressure": {
+        "avg_volume": 15073874,
+        "current_volume": 5079227,
+        "volume_ratio": 0.34,
+        "volume_trend": "decreasing",
+        "high_volume_days": 22,
+        "signal": "neutral"
+      },
+      "obv": {
+        "obv": -134622096.0,
+        "obv_trend": "bullish",
+        "obv_divergence": false,
+        "signal": "bullish"
+      },
+      "volume_profile": {
+        "poc": 320.3,
+        "value_area_high": 325.03,
+        "value_area_low": 318.95,
+        "profile": [
+          {
+            "price": 320.3,
+            "volume": 211947373
+          },
+          {
+            "price": 322.32,
+            "volume": 137457990
+          },
+          {
+            "price": 320.97,
+            "volume": 113810436
+          },
+          {
+            "price": 323.67,
+            "volume": 109156662
+          },
+          {
+            "price": 316.92,
+            "volume": 104128693
+          }
+        ]
+      }
+    },
+    "correlations": {
+      "brent": {
+        "correlation": 0,
+        "benchmark": "N/A",
+        "signal": "not_oil_sector",
+        "note": "Brent not available via API; ticker is not in oil/gas sector"
+      },
+      "usdrub": {
+        "correlation": -0.6383,
+        "benchmark": "USDRUB",
+        "data_points": 63,
+        "signal": "usd_sensitive"
+      }
+    },
+    "patterns": {
+      "bullish": [
+        "three_white_soldiers"
+      ],
+      "bearish": [],
+      "signal": "bullish"
+    },
+    "corporate": {
+      "dividend_calendar": {
+        "ticker": "SBER",
+        "figi": "BBG004730N88",
+        "name": "Сбер Банк",
+        "isin": "RU0009029540",
+        "lot": 1,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.01
+      },
+      "instrument_info": {
+        "ticker": "SBER",
+        "figi": "BBG004730N88",
+        "name": "Сбер Банк",
+        "isin": "RU0009029540",
+        "lot": 1,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.01
+      },
+      "trading_status": {
+        "ticker": "SBER",
+        "tradeable": true,
+        "last_price": 323.88,
+        "bid": 323.87,
+        "ask": 323.88
+      }
+    },
+    "trend": "bullish",
+    "signals": [
+      "MACD bullish with positive histogram",
+      "Price near upper Bollinger Band",
+      "Order book shows slight bid imbalance",
+      "OBV bullish trend",
+      "Volume profile indicates strong value area support",
+      "Three white soldiers pattern recent",
+      "Recent doji (neutral) but overall bullish bias"
+    ],
+    "trend_strength": 0.58,
+    "entry_signal": "buy"
+  },
+  {
+    "type": "market_data_snapshot",
+    "agent": "MarketData",
+    "ticker": "GAZP",
+    "timestamp": "2026-06-16T10:58:09.822902",
+    "quote": {
+      "ticker": "GAZP",
+      "figi": "BBG004730RP0",
+      "bid": 113.57,
+      "ask": 113.58,
+      "last": 113.6,
+      "spread": 0.01,
+      "timestamp": "2026-06-16T10:57:53.574748+00:00"
+    },
+    "indicators": {
+      "RSI": 26.55,
+      "MACD": {
+        "macd": -1.5135,
+        "signal": -1.6547,
+        "histogram": 0.1412,
+        "trend": "bullish"
+      },
+      "SMA_50": 117.89,
+      "SMA_200": 123.28,
+      "BB": {
+        "upper": 117.92,
+        "middle": 114.72,
+        "lower": 111.52
+      },
+      "ATR": 1.51
+    },
+    "support": 111.98,
+    "resistance": 128.13,
+    "volatility": 16.41,
+    "microstructure": {
+      "order_book_imbalance": {
+        "imbalance": 0.1779,
+        "bid_volume": 35836,
+        "ask_volume": 25013,
+        "bid_levels": 20,
+        "ask_levels": 20,
+        "large_bid": 6432,
+        "large_ask": 4677,
+        "signal": "bullish"
+      },
+      "volume_pressure": {
+        "avg_volume": 3825103,
+        "current_volume": 1512599,
+        "volume_ratio": 0.4,
+        "volume_trend": "decreasing",
+        "high_volume_days": 19,
+        "signal": "neutral"
+      },
+      "obv": {
+        "obv": -37004253.0,
+        "obv_trend": "bearish",
+        "obv_divergence": false,
+        "signal": "bearish"
+      },
+      "volume_profile": {
+        "poc": 124.52,
+        "value_area_high": 137.39,
+        "value_area_low": 120.66,
+        "profile": [
+          {
+            "price": 124.52,
+            "volume": 28362750
+          },
+          {
+            "price": 132.24,
+            "volume": 25639350
+          },
+          {
+            "price": 137.39,
+            "volume": 25326514
+          },
+          {
+            "price": 133.53,
+            "volume": 25307163
+          },
+          {
+            "price": 128.38,
+            "volume": 23152477
+          }
+        ]
+      }
+    },
+    "correlations": {
+      "brent": {
+        "correlation": 0.8,
+        "benchmark": "sector_flag",
+        "signal": "oil_sensitive",
+        "note": "Oil/gas sector ticker — inherently oil-correlated"
+      },
+      "usdrub": {
+        "correlation": 0.8673,
+        "benchmark": "USDRUB",
+        "data_points": 63,
+        "signal": "usd_sensitive"
+      }
+    },
+    "patterns": {
+      "bullish": [
+        "three_white_soldiers",
+        "morning_star"
+      ],
+      "bearish": [
+        "bearish_engulfing"
+      ],
+      "signal": "bullish"
+    },
+    "corporate": {
+      "dividend_calendar": {
+        "ticker": "GAZP",
+        "figi": "BBG004730RP0",
+        "name": "Газпром",
+        "isin": "RU0007661625",
+        "lot": 10,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.01
+      },
+      "instrument_info": {
+        "ticker": "GAZP",
+        "figi": "BBG004730RP0",
+        "name": "Газпром",
+        "isin": "RU0007661625",
+        "lot": 10,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.01
+      },
+      "trading_status": {
+        "ticker": "GAZP",
+        "tradeable": true,
+        "last_price": 113.58,
+        "bid": 113.56,
+        "ask": 113.58
+      }
+    },
+    "trend": "bearish",
+    "signals": [
+      "RSI low (26.55)",
+      "price below SMA_50 and SMA_200",
+      "decreasing volume pressure",
+      "OBV bearish trend",
+      "recent bearish engulfing candlestick pattern",
+      "volume ratio 0.4",
+      "imbalance bullish but offset by other factors"
+    ],
+    "trend_strength": 0.3,
+    "entry_signal": "sell"
+  },
+  {
+    "type": "market_data_snapshot",
+    "agent": "MarketData",
+    "ticker": "LKOH",
+    "timestamp": "2026-06-16T10:58:27.054083",
+    "quote": {
+      "ticker": "LKOH",
+      "figi": "BBG004731032",
+      "bid": 4685.5,
+      "ask": 4686.5,
+      "last": 4685.5,
+      "spread": 1.0,
+      "timestamp": "2026-06-16T10:58:09.863140+00:00"
+    },
+    "indicators": {
+      "RSI": 24.94,
+      "MACD": {
+        "macd": -105.351,
+        "signal": -109.0314,
+        "histogram": 3.6804,
+        "trend": "bullish"
+      },
+      "SMA_50": 5055.74,
+      "SMA_200": 5258.4,
+      "BB": {
+        "upper": 5018.16,
+        "middle": 4815.2,
+        "lower": 4612.24
+      },
+      "ATR": 90.64
+    },
+    "support": 4644.83,
+    "resistance": 5583.0,
+    "volatility": 18.1,
+    "microstructure": {
+      "order_book_imbalance": {
+        "imbalance": 0.2463,
+        "bid_volume": 10070,
+        "ask_volume": 6090,
+        "bid_levels": 20,
+        "ask_levels": 20,
+        "large_bid": 1678,
+        "large_ask": 738,
+        "signal": "bullish"
+      },
+      "volume_pressure": {
+        "avg_volume": 486881,
+        "current_volume": 309874,
+        "volume_ratio": 0.64,
+        "volume_trend": "decreasing",
+        "high_volume_days": 20,
+        "signal": "neutral"
+      },
+      "obv": {
+        "obv": -10753045.0,
+        "obv_trend": "bearish",
+        "obv_divergence": false,
+        "signal": "bearish"
+      },
+      "volume_profile": {
+        "poc": 5563.75,
+        "value_area_high": 5676.75,
+        "value_area_low": 4998.75,
+        "profile": [
+          {
+            "price": 5563.75,
+            "volume": 4577333
+          },
+          {
+            "price": 5789.75,
+            "volume": 4461526
+          },
+          {
+            "price": 5450.75,
+            "volume": 4116043
+          },
+          {
+            "price": 5224.75,
+            "volume": 3916115
+          },
+          {
+            "price": 5676.75,
+            "volume": 3406632
+          }
+        ]
+      }
+    },
+    "correlations": {
+      "brent": {
+        "correlation": 0.8973,
+        "benchmark": "GAZP_proxy",
+        "data_points": 87,
+        "signal": "oil_sensitive"
+      },
+      "usdrub": {
+        "correlation": 0.819,
+        "benchmark": "USDRUB",
+        "data_points": 63,
+        "signal": "usd_sensitive"
+      }
+    },
+    "patterns": {
+      "bullish": [
+        "hammer",
+        "bullish_engulfing"
+      ],
+      "bearish": [
+        "bearish_engulfing",
+        "evening_star"
+      ],
+      "signal": "neutral"
+    },
+    "corporate": {
+      "dividend_calendar": {
+        "ticker": "LKOH",
+        "figi": "BBG004731032",
+        "name": "ЛУКОЙЛ",
+        "isin": "RU0009024277",
+        "lot": 1,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.5
+      },
+      "instrument_info": {
+        "ticker": "LKOH",
+        "figi": "BBG004731032",
+        "name": "ЛУКОЙЛ",
+        "isin": "RU0009024277",
+        "lot": 1,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.5
+      },
+      "trading_status": {
+        "ticker": "LKOH",
+        "tradeable": true,
+        "last_price": 4685.5,
+        "bid": 4685.5,
+        "ask": 4686.5
+      }
+    },
+    "trend": "neutral",
+    "signals": [
+      "oversold",
+      "bullish_macd",
+      "order_book_bullish",
+      "bearish_obv",
+      "neutral_volume",
+      "hammer_recent",
+      "bullish_engulfing",
+      "bearish_engulfing",
+      "evening_star"
+    ],
+    "trend_strength": 0.45,
+    "entry_signal": "hold"
+  },
+  {
+    "type": "market_data_snapshot",
+    "agent": "MarketData",
+    "ticker": "GMKN",
+    "timestamp": "2026-06-16T10:58:41.493600",
+    "quote": {
+      "ticker": "GMKN",
+      "figi": "BBG004731489",
+      "bid": 134.9,
+      "ask": 134.94,
+      "last": 134.94,
+      "spread": 0.04,
+      "timestamp": "2026-06-16T10:58:27.098019+00:00"
+    },
+    "indicators": {
+      "RSI": 52.0,
+      "MACD": {
+        "macd": 0.8268,
+        "signal": 0.2843,
+        "histogram": 0.5425,
+        "trend": "bullish"
+      },
+      "SMA_50": 129.96,
+      "SMA_200": 133.87,
+      "BB": {
+        "upper": 137.08,
+        "middle": 130.35,
+        "lower": 123.62
+      },
+      "ATR": 3.34
+    },
+    "support": 122.89,
+    "resistance": 141.94,
+    "volatility": 28.43,
+    "microstructure": {
+      "order_book_imbalance": {
+        "imbalance": 0.4053,
+        "bid_volume": 36867,
+        "ask_volume": 15603,
+        "bid_levels": 20,
+        "ask_levels": 20,
+        "large_bid": 5288,
+        "large_ask": 2782,
+        "signal": "bullish"
+      },
+      "volume_pressure": {
+        "avg_volume": 1374140,
+        "current_volume": 1055080,
+        "volume_ratio": 0.77,
+        "volume_trend": "stable",
+        "high_volume_days": 17,
+        "signal": "neutral"
+      },
+      "obv": {
+        "obv": 4586468.0,
+        "obv_trend": "bullish",
+        "obv_divergence": false,
+        "signal": "bullish"
+      },
+      "volume_profile": {
+        "poc": 128.18,
+        "value_area_high": 136.53,
+        "value_area_low": 125.4,
+        "profile": [
+          {
+            "price": 128.18,
+            "volume": 17787322
+          },
+          {
+            "price": 133.75,
+            "volume": 16217356
+          },
+          {
+            "price": 136.53,
+            "volume": 13311862
+          },
+          {
+            "price": 140.71,
+            "volume": 10648296
+          },
+          {
+            "price": 130.96,
+            "volume": 9601260
+          }
+        ]
+      }
+    },
+    "correlations": {
+      "brent": {
+        "correlation": 0,
+        "benchmark": "N/A",
+        "signal": "not_oil_sector",
+        "note": "Brent not available via API; ticker is not in oil/gas sector"
+      },
+      "usdrub": {
+        "correlation": 0.827,
+        "benchmark": "USDRUB",
+        "data_points": 63,
+        "signal": "usd_sensitive"
+      }
+    },
+    "patterns": {
+      "bullish": [
+        "inverted_hammer",
+        "three_white_soldiers"
+      ],
+      "bearish": [
+        "shooting_star"
+      ],
+      "signal": "bullish"
+    },
+    "corporate": {
+      "dividend_calendar": {
+        "ticker": "GMKN",
+        "figi": "BBG004731489",
+        "name": "Норильский никель",
+        "isin": "RU0007288411",
+        "lot": 10,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.02
+      },
+      "instrument_info": {
+        "ticker": "GMKN",
+        "figi": "BBG004731489",
+        "name": "Норильский никель",
+        "isin": "RU0007288411",
+        "lot": 10,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.02
+      },
+      "trading_status": {
+        "ticker": "GMKN",
+        "tradeable": true,
+        "last_price": 134.94,
+        "bid": 134.92,
+        "ask": 134.94
+      }
+    },
+    "trend": "bullish",
+    "signals": [
+      "bullish",
+      "MACD bullish",
+      "order_book_bullish",
+      "OBV bullish",
+      "volume_neutral",
+      "candlestick_reversal"
+    ],
+    "trend_strength": 0.65,
+    "entry_signal": "buy"
+  },
+  {
+    "type": "market_data_snapshot",
+    "agent": "MarketData",
+    "ticker": "YDEX",
+    "timestamp": "2026-06-16T10:58:57.557514",
+    "quote": {
+      "ticker": "YDEX",
+      "figi": "TCS00A107T19",
+      "bid": 4085.0,
+      "ask": 4086.0,
+      "last": 4085.0,
+      "spread": 1.0,
+      "timestamp": "2026-06-16T10:58:41.539055+00:00"
+    },
+    "indicators": {
+      "RSI": 50.05,
+      "MACD": {
+        "macd": -3.7007,
+        "signal": -17.3381,
+        "histogram": 13.6374,
+        "trend": "bullish"
+      },
+      "SMA_50": 4035.65,
+      "SMA_200": 4129.99,
+      "BB": {
+        "upper": 4096.17,
+        "middle": 4006.07,
+        "lower": 3915.98
+      },
+      "ATR": 59.39
+    },
+    "support": 3883.33,
+    "resistance": 4376.33,
+    "volatility": 15.14,
+    "microstructure": {
+      "order_book_imbalance": {
+        "imbalance": -0.3781,
+        "bid_volume": 6332,
+        "ask_volume": 14031,
+        "bid_levels": 20,
+        "ask_levels": 20,
+        "large_bid": 1294,
+        "large_ask": 2682,
+        "signal": "bearish"
+      },
+      "volume_pressure": {
+        "avg_volume": 452794,
+        "current_volume": 310811,
+        "volume_ratio": 0.69,
+        "volume_trend": "decreasing",
+        "high_volume_days": 17,
+        "signal": "neutral"
+      },
+      "obv": {
+        "obv": -3595522.0,
+        "obv_trend": "bullish",
+        "obv_divergence": false,
+        "signal": "bullish"
+      },
+      "volume_profile": {
+        "poc": 4018.65,
+        "value_area_high": 4264.25,
+        "value_area_low": 3957.25,
+        "profile": [
+          {
+            "price": 4018.65,
+            "volume": 5748433
+          },
+          {
+            "price": 4049.35,
+            "volume": 4813799
+          },
+          {
+            "price": 4294.95,
+            "volume": 3523128
+          },
+          {
+            "price": 4080.05,
+            "volume": 3291206
+          },
+          {
+            "price": 4325.65,
+            "volume": 3191821
+          }
+        ]
+      }
+    },
+    "correlations": {
+      "brent": {
+        "correlation": 0,
+        "benchmark": "N/A",
+        "signal": "not_oil_sector",
+        "note": "Brent not available via API; ticker is not in oil/gas sector"
+      },
+      "usdrub": {
+        "correlation": 0.7644,
+        "benchmark": "USDRUB",
+        "data_points": 63,
+        "signal": "usd_sensitive"
+      }
+    },
+    "patterns": {
+      "bullish": [
+        "bullish_engulfing",
+        "three_white_soldiers",
+        "morning_star"
+      ],
+      "bearish": [],
+      "signal": "bullish"
+    },
+    "corporate": {
+      "dividend_calendar": {
+        "ticker": "YDEX",
+        "figi": "TCS00A107T19",
+        "name": "Яндекс",
+        "isin": "RU000A107T19",
+        "lot": 1,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.5
+      },
+      "instrument_info": {
+        "ticker": "YDEX",
+        "figi": "TCS00A107T19",
+        "name": "Яндекс",
+        "isin": "RU000A107T19",
+        "lot": 1,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.5
+      },
+      "trading_status": {
+        "ticker": "YDEX",
+        "tradeable": true,
+        "last_price": 4086.0,
+        "bid": 4085.0,
+        "ask": 4086.0
+      }
+    },
+    "trend": "neutral",
+    "signals": [
+      "MACD bullish",
+      "OBV bullish",
+      "bullish engulfing recent",
+      "three_white_soldiers recent",
+      "morning_star recent"
+    ],
+    "trend_strength": 0.45,
+    "entry_signal": "hold"
+  },
+  {
+    "type": "market_data_snapshot",
+    "agent": "MarketData",
+    "ticker": "VTBR",
+    "timestamp": "2026-06-16T10:59:07.502943",
+    "quote": {
+      "ticker": "VTBR",
+      "figi": "BBG004730ZJ9",
+      "bid": 78.75,
+      "ask": 78.75,
+      "last": 78.75,
+      "spread": 0.0,
+      "timestamp": "2026-06-16T10:58:57.604801+00:00"
+    },
+    "indicators": {
+      "RSI": 55.51,
+      "MACD": {
+        "macd": -2.2423,
+        "signal": -3.0591,
+        "histogram": 0.8168,
+        "trend": "bullish"
+      },
+      "SMA_50": 85.05,
+      "SMA_200": 87.26,
+      "BB": {
+        "upper": 80.26,
+        "middle": 76.91,
+        "lower": 73.57
+      },
+      "ATR": 1.53
+    },
+    "support": 73.05,
+    "resistance": 97.94,
+    "volatility": 29.55,
+    "microstructure": {
+      "order_book_imbalance": {
+        "imbalance": 0.2152,
+        "bid_volume": 315165,
+        "ask_volume": 203526,
+        "bid_levels": 20,
+        "ask_levels": 20,
+        "large_bid": 100312,
+        "large_ask": 59068,
+        "signal": "bullish"
+      },
+      "volume_pressure": {
+        "avg_volume": 52292337,
+        "current_volume": 20661408,
+        "volume_ratio": 0.4,
+        "volume_trend": "stable",
+        "high_volume_days": 15,
+        "signal": "neutral"
+      },
+      "obv": {
+        "obv": -238469631.0,
+        "obv_trend": "bullish",
+        "obv_divergence": false,
+        "signal": "bullish"
+      },
+      "volume_profile": {
+        "poc": 90.48,
+        "value_area_high": 97.51,
+        "value_area_low": 81.11,
+        "profile": [
+          {
+            "price": 90.48,
+            "volume": 574922670
+          },
+          {
+            "price": 79.93,
+            "volume": 562744054
+          },
+          {
+            "price": 91.65,
+            "volume": 477518774
+          },
+          {
+            "price": 92.83,
+            "volume": 334368278
+          },
+          {
+            "price": 81.11,
+            "volume": 310864257
+          }
+        ]
+      }
+    },
+    "correlations": {
+      "brent": {
+        "correlation": 0,
+        "benchmark": "N/A",
+        "signal": "not_oil_sector",
+        "note": "Brent not available via API; ticker is not in oil/gas sector"
+      },
+      "usdrub": {
+        "correlation": 0.1819,
+        "benchmark": "USDRUB",
+        "data_points": 63,
+        "signal": "usd_neutral"
+      }
+    },
+    "patterns": {
+      "bullish": [
+        "morning_star"
+      ],
+      "bearish": [],
+      "signal": "bullish"
+    },
+    "corporate": {
+      "dividend_calendar": {
+        "ticker": "VTBR",
+        "figi": "BBG004730ZJ9",
+        "name": "Банк ВТБ",
+        "isin": "RU000A0JP5V6",
+        "lot": 1,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.005
+      },
+      "instrument_info": {
+        "ticker": "VTBR",
+        "figi": "BBG004730ZJ9",
+        "name": "Банк ВТБ",
+        "isin": "RU000A0JP5V6",
+        "lot": 1,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.005
+      },
+      "trading_status": {
+        "ticker": "VTBR",
+        "tradeable": true,
+        "last_price": 78.75,
+        "bid": 78.75,
+        "ask": 78.75
+      }
+    },
+    "trend": "neutral",
+    "signals": [
+      "bullish",
+      "bearish",
+      "stable volume",
+      "reversal pattern",
+      "high volume days"
+    ],
+    "trend_strength": 0.45,
+    "entry_signal": "buy"
+  },
+  {
+    "type": "market_data_snapshot",
+    "agent": "MarketData",
+    "ticker": "ROSN",
+    "timestamp": "2026-06-16T10:59:17.203131",
+    "quote": {
+      "ticker": "ROSN",
+      "figi": "BBG004731354",
+      "bid": 354.65,
+      "ask": 354.7,
+      "last": 354.65,
+      "spread": 0.05,
+      "timestamp": "2026-06-16T10:59:07.552023+00:00"
+    },
+    "indicators": {
+      "RSI": 3.59,
+      "MACD": {
+        "macd": -12.111,
+        "signal": -10.5442,
+        "histogram": -1.5667,
+        "trend": "bearish"
+      },
+      "SMA_50": 399.39,
+      "SMA_200": 428.24,
+      "BB": {
+        "upper": 407.65,
+        "middle": 379.71,
+        "lower": 351.77
+      },
+      "ATR": 7.51
+    },
+    "support": 357.38,
+    "resistance": 447.97,
+    "volatility": 15.97,
+    "microstructure": {
+      "order_book_imbalance": {
+        "imbalance": 0.271,
+        "bid_volume": 91423,
+        "ask_volume": 52441,
+        "bid_levels": 20,
+        "ask_levels": 20,
+        "large_bid": 13900,
+        "large_ask": 13193,
+        "signal": "bullish"
+      },
+      "volume_pressure": {
+        "avg_volume": 7772063,
+        "current_volume": 3730830,
+        "volume_ratio": 0.48,
+        "volume_trend": "decreasing",
+        "high_volume_days": 19,
+        "signal": "neutral"
+      },
+      "obv": {
+        "obv": -269396110.0,
+        "obv_trend": "bearish",
+        "obv_divergence": false,
+        "signal": "bearish"
+      },
+      "volume_profile": {
+        "poc": 508.94,
+        "value_area_high": 508.94,
+        "value_area_low": 437.75,
+        "profile": [
+          {
+            "price": 508.94,
+            "volume": 100331307
+          },
+          {
+            "price": 501.03,
+            "volume": 77072418
+          },
+          {
+            "price": 469.39,
+            "volume": 65943144
+          },
+          {
+            "price": 437.75,
+            "volume": 60848009
+          },
+          {
+            "price": 493.12,
+            "volume": 38888619
+          }
+        ]
+      }
+    },
+    "correlations": {
+      "brent": {
+        "correlation": 0.95,
+        "benchmark": "GAZP_proxy",
+        "data_points": 87,
+        "signal": "oil_sensitive"
+      },
+      "usdrub": {
+        "correlation": 0.9311,
+        "benchmark": "USDRUB",
+        "data_points": 63,
+        "signal": "usd_sensitive"
+      }
+    },
+    "patterns": {
+      "bullish": [
+        "hammer"
+      ],
+      "bearish": [
+        "three_black_crows",
+        "evening_star"
+      ],
+      "signal": "bearish"
+    },
+    "corporate": {
+      "dividend_calendar": {
+        "ticker": "ROSN",
+        "figi": "BBG004731354",
+        "name": "Роснефть",
+        "isin": "RU000A0J2Q06",
+        "lot": 1,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.05
+      },
+      "instrument_info": {
+        "ticker": "ROSN",
+        "figi": "BBG004731354",
+        "name": "Роснефть",
+        "isin": "RU000A0J2Q06",
+        "lot": 1,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.05
+      },
+      "trading_status": {
+        "ticker": "ROSN",
+        "tradeable": true,
+        "last_price": 354.65,
+        "bid": 354.65,
+        "ask": 354.7
+      }
+    },
+    "trend": "bearish",
+    "signals": [
+      "bearish",
+      "oversold",
+      "volume_decreasing",
+      "candlestick_reversal_bearish",
+      "support_near_price"
+    ],
+    "trend_strength": 0.35,
+    "entry_signal": "sell"
+  },
+  {
+    "type": "market_data_snapshot",
+    "agent": "MarketData",
+    "ticker": "NVTK",
+    "timestamp": "2026-06-16T10:59:30.888903",
+    "quote": {
+      "ticker": "NVTK",
+      "figi": "BBG00475KKY8",
+      "bid": 1065.7,
+      "ask": 1065.9,
+      "last": 1065.9,
+      "spread": 0.2,
+      "timestamp": "2026-06-16T10:59:17.253492+00:00"
+    },
+    "indicators": {
+      "RSI": 32.03,
+      "MACD": {
+        "macd": -16.6448,
+        "signal": -18.9968,
+        "histogram": 2.352,
+        "trend": "bullish"
+      },
+      "SMA_50": 1108.56,
+      "SMA_200": 1174.57,
+      "BB": {
+        "upper": 1122.46,
+        "middle": 1071.69,
+        "lower": 1020.92
+      },
+      "ATR": 24.49
+    },
+    "support": 1027.73,
+    "resistance": 1220.77,
+    "volatility": 23.01,
+    "microstructure": {
+      "order_book_imbalance": {
+        "imbalance": 0.2174,
+        "bid_volume": 21636,
+        "ask_volume": 13909,
+        "bid_levels": 20,
+        "ask_levels": 20,
+        "large_bid": 4101,
+        "large_ask": 2719,
+        "signal": "bullish"
+      },
+      "volume_pressure": {
+        "avg_volume": 2213859,
+        "current_volume": 1047381,
+        "volume_ratio": 0.47,
+        "volume_trend": "decreasing",
+        "high_volume_days": 16,
+        "signal": "neutral"
+      },
+      "obv": {
+        "obv": -60916482.0,
+        "obv_trend": "bearish",
+        "obv_divergence": false,
+        "signal": "bearish"
+      },
+      "volume_profile": {
+        "poc": 1419.01,
+        "value_area_high": 1419.01,
+        "value_area_low": 1144.74,
+        "profile": [
+          {
+            "price": 1419.01,
+            "volume": 21831423
+          },
+          {
+            "price": 1321.05,
+            "volume": 15435341
+          },
+          {
+            "price": 1144.74,
+            "volume": 15358958
+          },
+          {
+            "price": 1379.82,
+            "volume": 13887014
+          },
+          {
+            "price": 1066.38,
+            "volume": 13172782
+          }
+        ]
+      }
+    },
+    "correlations": {
+      "brent": {
+        "correlation": 0.9172,
+        "benchmark": "GAZP_proxy",
+        "data_points": 87,
+        "signal": "oil_sensitive"
+      },
+      "usdrub": {
+        "correlation": 0.9346,
+        "benchmark": "USDRUB",
+        "data_points": 63,
+        "signal": "usd_sensitive"
+      }
+    },
+    "patterns": {
+      "bullish": [],
+      "bearish": [
+        "bearish_engulfing"
+      ],
+      "signal": "bearish"
+    },
+    "corporate": {
+      "dividend_calendar": {
+        "ticker": "NVTK",
+        "figi": "BBG00475KKY8",
+        "name": "НОВАТЭК",
+        "isin": "RU000A0DKVS5",
+        "lot": 1,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.1
+      },
+      "instrument_info": {
+        "ticker": "NVTK",
+        "figi": "BBG00475KKY8",
+        "name": "НОВАТЭК",
+        "isin": "RU000A0DKVS5",
+        "lot": 1,
+        "currency": "rub",
+        "instrument_type": "share",
+        "min_price_increment": 0.1
+      },
+      "trading_status": {
+        "ticker": "NVTK",
+        "tradeable": true,
+        "last_price": 1065.9,
+        "bid": 1065.7,
+        "ask": 1065.9
+      }
+    },
+    "trend": "bearish",
+    "signals": [
+      "bearish_engulfing",
+      "MACD_bullish",
+      "volume_decreasing",
+      "obv_bearish",
+      "imbalance_bullish"
+    ],
+    "trend_strength": 0.6,
+    "entry_signal": "sell"
+  }
+]

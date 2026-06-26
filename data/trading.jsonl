@@ -1,0 +1,80 @@
+{"event": "Starting Trading Agents System..."}
+{"event": "Optional env var not set: NEWS_API_KEY (will be skipped)"}
+{"event": "Optional env var not set: TELEGRAM_BOT_TOKEN (will be skipped)"}
+{"event": "Optional env var not set: TELEGRAM_CHAT_ID (will be skipped)"}
+{"event": "[PAPER] Paper trading mode: no real orders will be placed"}
+{"event": "HTTP Request: GET http://localhost:1234/v1/models \"HTTP/1.1 200 OK\""}
+{"event": "HTTP Request: GET http://localhost:1234/v1/models \"HTTP/1.1 200 OK\""}
+{"event": "LM Studio connected. Models: ['qwen/qwen3.5-9b', 'google/gemma-4-e2b', 'text-embedding-mxbai-embed-large-v1', 'text-embedding-nomic-embed-text-v1.5']"}
+{"event": "T-Invest client connected."}
+{"event": "Cleanup: agent_logs older than 90d"}
+{"event": "Cleanup: events older than 90d"}
+{"event": "Cleanup: equity_snapshots older than 90d"}
+{"event": "Cleanup: trade_lessons older than 90d"}
+{"event": "Cleanup: config_audit older than 90d"}
+{"event": "Cleanup: VACUUM completed"}
+{"event": "Starting stream server on 0.0.0.0:8000"}
+{"event": "Starting Trading Agents System..."}
+{"event": "Optional env var not set: NEWS_API_KEY (will be skipped)"}
+{"event": "Optional env var not set: TELEGRAM_BOT_TOKEN (will be skipped)"}
+{"event": "Optional env var not set: TELEGRAM_CHAT_ID (will be skipped)"}
+{"event": "[PAPER] Paper trading mode: no real orders will be placed"}
+{"event": "HTTP Request: GET http://localhost:1234/v1/models \"HTTP/1.1 200 OK\""}
+{"event": "HTTP Request: GET http://localhost:1234/v1/models \"HTTP/1.1 200 OK\""}
+{"event": "LM Studio connected. Models: ['qwen/qwen3.5-9b', 'google/gemma-4-e2b', 'text-embedding-mxbai-embed-large-v1', 'text-embedding-nomic-embed-text-v1.5']"}
+{"event": "T-Invest client connected."}
+{"event": "Cleanup: agent_logs older than 90d"}
+{"event": "Cleanup: events older than 90d"}
+{"event": "Cleanup: equity_snapshots older than 90d"}
+{"event": "Cleanup: trade_lessons older than 90d"}
+{"event": "Cleanup: config_audit older than 90d"}
+{"event": "Cleanup: VACUUM completed"}
+{"event": "Starting stream server on 0.0.0.0:8000"}
+{"event": "Starting Trading Agents System..."}
+{"event": "Optional env var not set: NEWS_API_KEY (will be skipped)"}
+{"event": "Optional env var not set: TELEGRAM_BOT_TOKEN (will be skipped)"}
+{"event": "Optional env var not set: TELEGRAM_CHAT_ID (will be skipped)"}
+{"event": "[PAPER] Paper trading mode: no real orders will be placed"}
+{"event": "HTTP Request: GET http://localhost:1234/v1/models \"HTTP/1.1 200 OK\""}
+{"event": "HTTP Request: GET http://localhost:1234/v1/models \"HTTP/1.1 200 OK\""}
+{"event": "LM Studio connected. Models: ['qwen/qwen3.5-9b', 'google/gemma-4-e2b', 'text-embedding-mxbai-embed-large-v1', 'text-embedding-nomic-embed-text-v1.5']"}
+{"event": "T-Invest client connected."}
+{"event": "Cleanup: agent_logs older than 90d"}
+{"event": "Cleanup: events older than 90d"}
+{"event": "Cleanup: equity_snapshots older than 90d"}
+{"event": "Cleanup: trade_lessons older than 90d"}
+{"event": "Cleanup: config_audit older than 90d"}
+{"event": "Cleanup: VACUUM completed"}
+{"event": "Starting stream server on 0.0.0.0:8000"}
+{"event": "=== Starting trading cycle #1 (90f7fa45-28b4-447e-a17b-eb5ee485197d) ==="}
+{"event": "Trading cycle error: 'SupervisorAgent' object has no attribute 'llm_client'"}
+{"event": "Starting stream server on 0.0.0.0:8000"}
+{"event": "Stream server starting..."}
+{"event": "Client connected. Total: 1"}
+{"event": "Client disconnected. Total: 0"}
+{"event": "Stream server shutting down..."}
+{"event": "Starting Trading Agents System..."}
+{"event": "Optional env var not set: NEWS_API_KEY (will be skipped)"}
+{"event": "Optional env var not set: TELEGRAM_BOT_TOKEN (will be skipped)"}
+{"event": "Optional env var not set: TELEGRAM_CHAT_ID (will be skipped)"}
+{"event": "[PAPER] Paper trading mode: no real orders will be placed"}
+{"event": "HTTP Request: GET http://localhost:1234/v1/models \"HTTP/1.1 200 OK\""}
+{"event": "HTTP Request: GET http://localhost:1234/v1/models \"HTTP/1.1 200 OK\""}
+{"event": "LM Studio connected. Models: ['qwen/qwen3.5-9b', 'google/gemma-4-e2b', 'text-embedding-mxbai-embed-large-v1', 'text-embedding-nomic-embed-text-v1.5']"}
+{"event": "T-Invest client connected."}
+{"event": "Cleanup: agent_logs older than 90d"}
+{"event": "Cleanup: events older than 90d"}
+{"event": "Cleanup: equity_snapshots older than 90d"}
+{"event": "Cleanup: trade_lessons older than 90d"}
+{"event": "Cleanup: config_audit older than 90d"}
+{"event": "Cleanup: VACUUM completed"}
+{"event": "Starting stream server on 0.0.0.0:8000"}
+{"event": "=== Starting trading cycle #1 (ff04b28e-0693-4e21-a2a8-65200e5c0dda) ==="}
+{"event": "Trading cycle error: 'SupervisorAgent' object has no attribute 'llm_client'"}
+{"event": "Starting stream server on 0.0.0.0:8000"}
+{"event": "Stream server starting..."}
+{"event": "Client connected. Total: 1"}
+{"event": "Client disconnected. Total: 0"}
+{"event": "Client connected. Total: 1"}
+{"event": "Client disconnected. Total: 0"}
+{"event": "Stream server shutting down..."}

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trading-agents"
+version = "0.1.0"
+description = "Multi-agent trading system with LM Studio"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+ignore = ["E501", "F403", "F405"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+warn_unused_ignores = true
+files = [
+  "tools/prompts.py", "tools/validator.py", "tools/drawdown.py",
+  "tools/retry.py", "tools/metrics.py",
+  "config/secrets.py", "config/settings.py",
+  "core/health.py", "core/reconciliation.py",
+  "agents/supervisor.py", "agents/execution_agent.py",
+  "agents/base_agent.py",
+]
+
+[tool.pytest-cov]
+addopts = "--cov=tools --cov=core --cov=agents --cov-report=term-missing"

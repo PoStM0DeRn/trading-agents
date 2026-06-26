@@ -1,0 +1,426 @@
+/* Dark theme for Trading Agents Live Stream */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Consolas', monospace;
+    background: #0a0a0f;
+    color: #e0e0e0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+}
+
+.dashboard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-radius: 12px;
+    border: 1px solid #2a2a4a;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #888;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #666;
+    transition: background 0.3s;
+}
+
+.status-dot.connected {
+    background: #00ff88;
+    box-shadow: 0 0 8px #00ff88;
+}
+
+.status-dot.disconnected {
+    background: #ff4444;
+}
+
+/* Badges */
+.badge {
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.badge-paper {
+    background: rgba(0, 255, 136, 0.15);
+    color: #00ff88;
+    border: 1px solid rgba(0, 255, 136, 0.3);
+}
+
+.badge-live {
+    background: rgba(255, 68, 68, 0.15);
+    color: #ff4444;
+    border: 1px solid rgba(255, 68, 68, 0.3);
+}
+
+/* Main Grid */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    flex: 1;
+    min-height: 0;
+}
+
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Cards */
+.card {
+    background: #12121a;
+    border-radius: 12px;
+    border: 1px solid #1e1e30;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.card-header {
+    font-size: 14px;
+    font-weight: 600;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #1e1e30;
+}
+
+.card-subheader {
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+/* Portfolio Card */
+.portfolio-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.metric {
+    text-align: center;
+}
+
+.metric-label {
+    display: block;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.metric-value {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.metric-value.positive {
+    color: #00ff88;
+}
+
+.metric-value.negative {
+    color: #ff4444;
+}
+
+/* Agents Card */
+.agents-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.agent-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    background: #1a1a28;
+    border-radius: 8px;
+    border-left: 3px solid #333;
+    transition: all 0.3s;
+}
+
+.agent-row.active {
+    border-left-color: #00ff88;
+    background: #1a2a1a;
+}
+
+.agent-row.idle {
+    border-left-color: #333;
+    opacity: 0.6;
+}
+
+.agent-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #333;
+}
+
+.agent-row.active .agent-indicator {
+    background: #00ff88;
+    box-shadow: 0 0 8px #00ff88;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.agent-name {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.agent-detail {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Trades Card */
+.trades-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.trade-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    background: #1a1a28;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.trade-result {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.trade-result.win {
+    background: rgba(0, 255, 136, 0.2);
+    color: #00ff88;
+}
+
+.trade-result.loss {
+    background: rgba(255, 68, 68, 0.2);
+    color: #ff4444;
+}
+
+.trade-ticker {
+    font-weight: 600;
+    color: #fff;
+    width: 60px;
+}
+
+.trade-side {
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.trade-side.long {
+    background: rgba(0, 255, 136, 0.15);
+    color: #00ff88;
+}
+
+.trade-side.short {
+    background: rgba(255, 68, 68, 0.15);
+    color: #ff4444;
+}
+
+.trade-pnl {
+    margin-left: auto;
+    font-weight: 600;
+}
+
+.trade-pnl.positive {
+    color: #00ff88;
+}
+
+.trade-pnl.negative {
+    color: #ff4444;
+}
+
+.trade-time {
+    color: #666;
+    font-size: 11px;
+}
+
+/* LM Studio Card */
+.lmstudio-card {
+    background: linear-gradient(135deg, #12121a 0%, #1a1225 100%);
+}
+
+.lmstudio-status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.lm-model {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.lm-online {
+    font-size: 14px;
+    color: #00ff88;
+}
+
+.lm-metric {
+    margin-bottom: 12px;
+}
+
+.lm-label {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 4px;
+}
+
+.lm-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 8px;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: #1a1a28;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+.speed-fill {
+    background: linear-gradient(90deg, #00ff88, #00cc6a);
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+.vram-fill {
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
+}
+
+/* LM Stats */
+.lm-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.lm-stat {
+    padding: 8px;
+    background: #1a1a28;
+    border-radius: 8px;
+}
+
+.lm-stat-label {
+    display: block;
+    font-size: 11px;
+    color: #666;
+    margin-bottom: 2px;
+}
+
+.lm-stat-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* LM Chart */
+.lm-chart {
+    margin-top: 12px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a28;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}

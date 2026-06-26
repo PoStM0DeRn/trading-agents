@@ -1,0 +1,43 @@
+# Core
+pyyaml==6.0.3
+python-dotenv==1.0.1
+
+# LLM (LM Studio - OpenAI compatible)
+openai==1.58.1
+
+# T-Invest API
+tinkoff-investments>=0.2.0b59
+grpcio==1.81.1
+protobuf>=4.21.6,<5.0.0
+
+# Market data & analytics
+pandas==3.0.2
+numpy==2.4.4
+
+# News
+beautifulsoup4==4.14.3
+
+# Memory & DB
+sqlalchemy==2.0.36
+alembic==1.18.4
+
+# UI
+streamlit==1.56.0
+streamlit-autorefresh==1.0.1
+plotly==6.7.0
+
+# Utilities
+httpx==0.28.1
+tenacity==9.1.4
+pydantic-settings==2.14.0
+
+# Observability
+structlog==25.2.0
+sentry-sdk==2.22.0
+prometheus-client==0.21.1
+
+# Stream server (YouTube Live)
+fastapi==0.115.6
+starlette>=0.40.0,<0.42.0
+uvicorn[standard]==0.34.0
+websockets==16.0
