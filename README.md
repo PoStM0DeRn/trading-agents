@@ -150,6 +150,37 @@ python main.py --stream
 python -m backtester --tickers SBER,GAZP --period 1y --interval 1d
 ```
 
+## Dashboards & Management
+
+Система имеет два интерфейса — WebSocket dashboard для real-time мониторинга и Streamlit dashboard для полного управления.
+
+### WebSocket Dashboard (`http://localhost:8000`)
+
+Запускается через `python main.py --stream`. Real-time мониторинг всех компонентов:
+
+| Раздел | Отображает |
+|--------|-----------|
+| **Portfolio** | Баланс, P&L, количество позиций, leverage |
+| **Agent Pipeline** | Активность агентов в реальном времени, статус каждого шага цикла |
+| **LM Studio** | Скорость генерации (tok/s), VRAM, количество запросов/токенов, график скорости |
+| **Equity Curve** | График стоимости портфеля (Plotly) |
+| **Last Trades** | Последние сделки с деталями |
+
+### Streamlit Dashboard (полное управление системой)
+
+Запускается через `streamlit run ui/dashboard.py`. Даёт полный контроль над всеми аспектами системы:
+
+| Вкладка | Возможности |
+|---------|-------------|
+| **Cycle** | Запуск trading cycle вручную, настройка авто-расписания, запуск MOEX сканера |
+| **Positions** | Просмотр открытых/закрытых позиций, обновление цен |
+| **Statistics** | P&L графики, win rate, performance по стратегиям, распределение по секторам |
+| **Lessons** | LLM-анализ убыточных сделок, паттерны потерь |
+| **Optimization** | Сравнение стратегий по R/R, прибыли, аллокация капитала |
+| **Logs** | Детальные логи всех агентов с фильтрацией по агенту и типу действия |
+| **Scanner** | MOEX скринер: отбор tickers по ликвидности, секторам, с LLM-анализом |
+| **Settings** | Полная конфигурация: капитал, плечо, risk limits, watchlist, scheduler, LLM |
+
 ## Configuration
 
 Key sections in `config/settings.yaml`:
